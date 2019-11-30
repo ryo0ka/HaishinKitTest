@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,9 +13,11 @@
 		6D0EC9FD2392634500D6B88D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D0EC9FB2392634500D6B88D /* Main.storyboard */; };
 		6D0EC9FF2392634600D6B88D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D0EC9FE2392634600D6B88D /* Assets.xcassets */; };
 		6D0ECA022392634600D6B88D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D0ECA002392634600D6B88D /* LaunchScreen.storyboard */; };
+		E31EBC7E6E72E471A39DE9BD /* Pods_HaishinKitTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F64FAE1F1EB43DC39860607 /* Pods_HaishinKitTest.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		64D81C8DF6E4B90E9360ED01 /* Pods-HaishinKitTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HaishinKitTest.release.xcconfig"; path = "Target Support Files/Pods-HaishinKitTest/Pods-HaishinKitTest.release.xcconfig"; sourceTree = "<group>"; };
 		6D0EC9F22392634500D6B88D /* HaishinKitTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HaishinKitTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D0EC9F52392634500D6B88D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6D0EC9F72392634500D6B88D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		6D0EC9FE2392634600D6B88D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6D0ECA012392634600D6B88D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6D0ECA032392634600D6B88D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F64FAE1F1EB43DC39860607 /* Pods_HaishinKitTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HaishinKitTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB49EFBDE491C81C95F71DAF /* Pods-HaishinKitTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HaishinKitTest.debug.xcconfig"; path = "Target Support Files/Pods-HaishinKitTest/Pods-HaishinKitTest.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E31EBC7E6E72E471A39DE9BD /* Pods_HaishinKitTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				6D0EC9F42392634500D6B88D /* HaishinKitTest */,
 				6D0EC9F32392634500D6B88D /* Products */,
+				AED6954F1806F35C2B9E705B /* Pods */,
+				6D29C1670866D23F2D75B36D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +74,23 @@
 			path = HaishinKitTest;
 			sourceTree = "<group>";
 		};
+		6D29C1670866D23F2D75B36D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8F64FAE1F1EB43DC39860607 /* Pods_HaishinKitTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AED6954F1806F35C2B9E705B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EB49EFBDE491C81C95F71DAF /* Pods-HaishinKitTest.debug.xcconfig */,
+				64D81C8DF6E4B90E9360ED01 /* Pods-HaishinKitTest.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6D0ECA062392634600D6B88D /* Build configuration list for PBXNativeTarget "HaishinKitTest" */;
 			buildPhases = (
+				FCE26113D58DD33161BCDFDF /* [CP] Check Pods Manifest.lock */,
 				6D0EC9EE2392634500D6B88D /* Sources */,
 				6D0EC9EF2392634500D6B88D /* Frameworks */,
 				6D0EC9F02392634500D6B88D /* Resources */,
+				4FA65F81399D0F2CBF4B5B78 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +158,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4FA65F81399D0F2CBF4B5B78 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HaishinKitTest/Pods-HaishinKitTest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HaishinKitTest/Pods-HaishinKitTest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HaishinKitTest/Pods-HaishinKitTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FCE26113D58DD33161BCDFDF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HaishinKitTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6D0EC9EE2392634500D6B88D /* Sources */ = {
@@ -282,11 +350,13 @@
 		};
 		6D0ECA072392634600D6B88D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB49EFBDE491C81C95F71DAF /* Pods-HaishinKitTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F5TVE5BVU4;
 				INFOPLIST_FILE = HaishinKitTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -294,17 +364,19 @@
 				PRODUCT_BUNDLE_IDENTIFIER = net.liveplanet.HaishinKitTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		6D0ECA082392634600D6B88D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 64D81C8DF6E4B90E9360ED01 /* Pods-HaishinKitTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F5TVE5BVU4;
 				INFOPLIST_FILE = HaishinKitTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -312,7 +384,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = net.liveplanet.HaishinKitTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
